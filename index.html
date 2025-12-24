@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Toom & Tawook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#ffffff;
+      color:#111;
+    }
+    .wrap{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 32px 16px 48px;
+      text-align:center;
+    }
+   .logo{
+  max-width: 100%;   /* never overflow on mobile */
+  height: auto;
+  display: block;
+  margin: 0 auto 2px; /* centered + minimal spacing */
+}
+    h1{
+      margin: 0 0 8px;
+      font-size: clamp(35px, 4vw, 44px);
+      letter-spacing: 0.5px;
+      text-align:center;
+      font-weight: bold;
+    }
+    .red{
+  color: #d40000; /* strong red */
+}
+    p{
+      margin: 0 0 24px;
+      font-size: clamp(24px, 2.2vw, 20px);
+      line-height: 1.5;
+      opacity: 0.9;
+      text-align:center;
+    }
+    .secondary-image{
+      width: min(800px, 90vw);
+      height: auto;
+      display:block;
+      margin: 0 auto;
+      border-radius: 0px; /* optional */
+    }
+  .flash{
+  animation: flashText 1.2s infinite;
+}
+
+@keyframes flashText{
+  0%   { color: #111; }
+  50%  { color: #d40000; } /* red */
+  100% { color: #111; }
+}
+
+  </style>
+</head>
+<body>
+  <div>
+    <!-- Top logo -->
+    <img class="logo" src="logo.png" alt="Toom & Tawook Logo">
+
+   <h1>
+ <h1>
+  <span class="red">T</span>oom<span class="red">N</span><span class="red">T</span>awook.com
+</h1>
+
+</h1>
+    <p class="flash">We look forward to serving you soon!!</p>
+
+    <!-- Image beneath the text -->
+    <img class="secondary-image" src="tnt.png" alt="Toom & Tawook">
+  </div>
+</body>
+</html>
